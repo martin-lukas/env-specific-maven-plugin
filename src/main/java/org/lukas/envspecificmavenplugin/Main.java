@@ -1,4 +1,4 @@
-package org.lukas;
+package org.lukas.envspecificmavenplugin;
 
 public class Main {
     public static void main(String[] args) {
