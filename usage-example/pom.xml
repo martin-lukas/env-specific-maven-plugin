@@ -17,6 +17,7 @@
 
     <properties>
         <java.version>17</java.version>
+        <env>local</env>
     </properties>
 
     <dependencies>
@@ -41,9 +42,12 @@
                         <goals>
                             <goal>copy</goal>
                         </goals>
-                        <phase>compile</phase>
                     </execution>
                 </executions>
+                <configuration>
+                    <sourceDir>configs</sourceDir>
+                    <env>${env}</env>
+                </configuration>
             </plugin>
         </plugins>
     </build>
